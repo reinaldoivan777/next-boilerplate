@@ -20,7 +20,16 @@ export default class MyDocument extends Document {
   render() {
     return (
       <html>
-        <Head>{this.props.styleTags}</Head>
+        <Head>
+          <link
+            rel='stylesheet'
+            href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+            integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T'
+            crossOrigin='anonymous'
+          />
+          <link href='https://fonts.googleapis.com/css?family=Poppins&display=swap' rel='stylesheet' />
+          {this.props.styleTags}
+        </Head>
         <body>
           <Main />
           <NextScript />
